@@ -4,6 +4,10 @@ import api from "../../api";
 import { Shoe } from "../../types";
 import Error from "../../components/error";
 import Loader from "../../components/loader";
+import Images from "./Images";
+import Head from "./Head";
+import Size from "./Size";
+import Color from "./Color";
 
 const Detail = () => {
   const { id } = useParams();
@@ -14,7 +18,20 @@ const Detail = () => {
   if (isLoading) return <Loader />;
   if (error) return <Error info={error.message} refetch={refetch} />;
 
-  return <div>Detail</div>;
+  if (!data) return;
+  return (
+    <section className="mt-8 grid md:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-4">
+      <div className="xl:col-span-2">
+        <Images images={data?.picture} />
+      </div>
+      <div className="flex flex-col gap-8">
+        <Head data={data} />
+        <Color data={data} />
+        <Size data={data} />
+        {/* <Foot data={data}/> */}
+      </div>
+    </section>
+  );
 };
 
 export default Detail;
