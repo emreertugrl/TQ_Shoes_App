@@ -1,50 +1,73 @@
-# React + TypeScript + Vite
+# 🛍️ Shoe App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Project Description
 
-Currently, two official plugins are available:
+A modern, user-friendly shoe store application built using React, TailwindCSS, and React Query. This project provides dynamic filtering, detailed product pages, and seamless navigation for a smooth shopping experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Dynamic Filtering: Filter products by size, color, gender, and price.
+- Responsive Design: Optimized for all screen sizes using TailwindCSS.
+- Detailed Product Pages: Each product includes images, pricing (with discounts), available sizes, and colors.
+- Add to Cart and Purchase Options: Directly add items to the cart or buy instantly.
+- State Management: Efficient management of UI states such as color and size selection.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Technologies Used
 
-- Configure the top-level `parserOptions` property like this:
+- Frontend: React.js
+- UI Framework: Tailwind CSS
+- State Management: React Query
+- API Requests: Axios
+- Routing: React Router Dom
+- Sanitization: xss library
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Development Setup
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+To develop the project, you can use the following commands:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. Clone the project.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   ```bash
+   git clone https://github.com/emreertugrl/TQ_Shoes_App.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd TQ_Shoes_App
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+    npm run dev
+   ```
+
+5. Start the JSON Server for the API:
+
+   ```bash
+    npm run server
+   ```
+
+6. Open your browser and navigate to view the application. :
+
+   ```bash
+   http://localhost:3000
+   ```
+
+## 🎥 Visual
+
+<img src="./public/shoe.gif" alt="shoe-app-gif">
+
+## 📞 Contact
+
+For any questions or suggestions, feel free to reach out:
+
+- Email: emreertugrl7@gmail.com
+- LinkedIn: [emreertugrul7](https://www.linkedin.com/in/emreertugrul7/)
