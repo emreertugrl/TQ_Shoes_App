@@ -21,7 +21,7 @@ const Card = ({ item }: Props) => {
       </div>
 
       <Link
-        to="/"
+        to={`/detail/${item.id}`}
         className="bg-gray-dark text-white font-medium px-4 py-2 rounded-lg transition hover:bg-black text-center flex items-center justify-center gap-1"
       >
         Ürünü Görüntüle - <Price item={item} />
