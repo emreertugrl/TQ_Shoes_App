@@ -10,3 +10,7 @@ export type Shoe = {
   price: number;
   discount?: number;
 };
+export type FilterProps<T> = {
+  selected: T;
+  setSelected: React.Dispatch<React.SetStateAction<T>>;
+};
