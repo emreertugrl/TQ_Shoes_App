@@ -8,6 +8,7 @@ import Images from "./Images";
 import Head from "./Head";
 import Size from "./Size";
 import Color from "./Color";
+import Foot from "./Foot";
 
 const Detail = () => {
   const { id } = useParams();
@@ -28,7 +29,7 @@ const Detail = () => {
         <Head data={data} />
         <Color data={data} />
         <Size data={data} />
-        {/* <Foot data={data}/> */}
+        <Foot data={data} />
       </div>
     </section>
   );
